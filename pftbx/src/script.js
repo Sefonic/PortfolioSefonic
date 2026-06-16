@@ -1,5 +1,5 @@
 const typingText = document.getElementById('typing-text');
-const phrases = ['Professional', 'Distinctive', 'Revenue-Driven', 'Conversion-Focused'];
+const phrases = ['Professional', 'Stunning', 'Profitable', 'Elite'];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -92,4 +92,21 @@ animate();
 window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+});
+
+const popup = document.getElementById('popup');
+const popupClose = document.getElementById('popup-close');
+
+setTimeout(() => {
+  popup.classList.add('show');
+}, 3000);
+
+popupClose.addEventListener('click', () => {
+  popup.classList.remove('show');
+});
+
+popup.addEventListener('click', (e) => {
+  if (e.target === popup) {
+    popup.classList.remove('show');
+  }
 });
