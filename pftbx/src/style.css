@@ -194,7 +194,7 @@ a.btnsecondary:hover {
   font-family: 'Space Grotesk', 'Inter', sans-serif;
 }
 
-.gradient-text {
+.gradienttext {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
