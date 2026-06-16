@@ -1,5 +1,5 @@
 const typingText = document.getElementById('typing-text');
-const phrases = ['Professional', 'stand out from rivals', 'increase server revenue', 'convert more players'];
+const phrases = ['Professional', 'Distinctive', 'Revenue-Driven', 'Conversion-Focused'];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
