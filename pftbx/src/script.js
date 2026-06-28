@@ -67,7 +67,7 @@ class Particle {
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(139, 92, 246, ${this.opacity})`;
+    ctx.fillStyle = `rgba(99, 102, 241, ${this.opacity * 0.6})`;
     ctx.fill();
   }
 }
@@ -94,19 +94,3 @@ window.addEventListener('resize', () => {
   canvas.height = window.innerHeight;
 });
 
-const popup = document.getElementById('popup');
-const popupClose = document.getElementById('popup-close');
-
-setTimeout(() => {
-  popup.classList.add('show');
-}, 3000);
-
-popupClose.addEventListener('click', () => {
-  popup.classList.remove('show');
-});
-
-popup.addEventListener('click', (e) => {
-  if (e.target === popup) {
-    popup.classList.remove('show');
-  }
-});
